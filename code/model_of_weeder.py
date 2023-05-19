@@ -17,6 +17,7 @@ for i in range(6):
     image_path="image" + array[i] + ".jpg"
     save_path="prediction" + array[i] + ".jpg"
     # infer on a local image
+    
     print(model.predict(image_path, confidence=10, overlap=10).json())
 
 # visualize your prediction
